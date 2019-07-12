@@ -1,7 +1,6 @@
 import java.util.HashSet;
 import java.util.Set;
 
-// TODO test case to be added
 public class Solution653 {
     public boolean findTarget(TreeNode root, int k) {
         Set<Integer> values = new HashSet<>();
