@@ -13,6 +13,7 @@ public class Solution82 {
                 fast = fast.next;
             } else if (slow.next == fast) {
                 slow = fast;
+
                 fast = fast.next;
             } else {
                 slow.next = fast.next;
