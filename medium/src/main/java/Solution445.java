@@ -1,16 +1,6 @@
 import java.util.Stack;
 
 public class Solution445 {
-    // Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         Stack<Integer> s1 = pushToStack(l1);
         Stack<Integer> s2 = pushToStack(l2);

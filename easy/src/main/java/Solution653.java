@@ -20,12 +20,4 @@ public class Solution653 {
         values.add(root.val);
         return find(root.left, values, target) || find(root.right, values, target);
     }
-
-    // Definition for a binary tree node.
-    public static class TreeNode {
-          int val;
-          TreeNode left;
-          TreeNode right;
-          TreeNode(int x) { val = x; }
-     }
 }

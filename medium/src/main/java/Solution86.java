@@ -1,15 +1,4 @@
 public class Solution86 {
-    // Definition for singly-linked list.
-    // TODO move ListNode to a common class
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public ListNode partition(ListNode head, int x) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;

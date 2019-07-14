@@ -1,13 +1,4 @@
 public class Solution24 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     // TODO solution could be better by having a dummy head node to babysitter the swap
     public ListNode swapPairs(ListNode head) {
         if (head == null) {
