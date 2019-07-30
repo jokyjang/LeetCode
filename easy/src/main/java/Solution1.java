@@ -16,7 +16,6 @@ public class Solution1 {
                 } else {
                     return new int[]{anotherIndex, i};
                 }
-
             }
         }
         return null;

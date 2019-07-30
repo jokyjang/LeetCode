@@ -6,7 +6,10 @@ public class Solution5Test {
 
     @Test
     public void longestPalindrome() {
-        String palindrome = new Solution5().longestPalindrome("aacdefcaa");
-        assertEquals("aa", palindrome);
+        Solution5.Matrix matrix = new Solution5.Matrix();
+        Solution5.Extending extending = new Solution5.Extending();
+
+        assertEquals("aa", matrix.longestPalindrome("aacdefcaa"));
+        assertEquals("aa", extending.longestPalindrome("aacdefcaa"));
     }
 }
