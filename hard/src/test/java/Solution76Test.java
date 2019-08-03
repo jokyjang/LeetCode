@@ -8,7 +8,7 @@ public class Solution76Test {
     public void minWindow() {
         Solution76 solution = new Solution76();
         assertEquals("BANC", solution.minWindow("ADOBECODEBANC", "ABC"));
-        assertEquals("", solution.minWindow("aa", "a"));
+        assertEquals("", solution.minWindow("a", "aa"));
     }
 
 }
