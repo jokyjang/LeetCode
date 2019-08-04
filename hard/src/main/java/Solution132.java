@@ -4,10 +4,12 @@ public class Solution132 {
             return 0;
         }
         int[] cuts = new int[s.length()];
+        boolean[][] isPal = new boolean[s.length()][s.length()];
         for (int i = 1; i < s.length(); ++i) {
             int minCut = i;
             for (int j = 0; j <= i; ++j) {
-                if (isPalindrome(s, j, i)) {
+                if (s.charAt(j) == s.charAt(i) && (j+1>=i-1 || isPal[j+1][i-1])) {
+                    isPal[j][i] = true;
                     if (j > 0) {
                         minCut = Math.min(minCut, cuts[j-1] + 1);
                     } else {
@@ -19,13 +21,5 @@ public class Solution132 {
             cuts[i] = minCut;
         }
         return cuts[s.length() - 1];
-    }
-
-    private boolean isPalindrome(String s, int f, int t) {
-        while (f < t && s.charAt(f) == s.charAt(t)) {
-            f++;
-            t--;
-        }
-        return f >= t;
     }
 }
